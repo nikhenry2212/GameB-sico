@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"/>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Básico</title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <canvas id="canvas" width="500" height="500"></canvas>
+  <fieldset>
+    <legend>Player</legend>
+    <strong>Movimentos:</strong> <span id="movimentos">0</span><br>
+    <strong>Movimentos totais:</strong> <span id="movimentosTotais">0</span><br>
+    <strong>Pontuação:</strong> <span id="pontuacao">0</span><br>
+    <strong>Posição: </strong> <span id="posicaoX">0</span>X<span id="posicaoY">0</span><br>
+    <strong>Movimentos Restantes:</strong> <span id="movimentosRestantes">0</span>
+  </fieldset>
+
+  <script src="./lib/utils.js"></script>
+  <script src="./lib/settings.js"></script>
+  <script src="./lib/script.js"></script>
+  <script src="./lib/events.js"></script>
+  <script src="./lib/render.js"></script>
+
+
+  <script>
+    renderizarJogo();
+  </script>
+</body>
+</html>
